@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Activity Tracker</title>
+  <link rel="stylesheet" href="tracker.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Activity Tracker</h1>
+      <p >Track your daily activity and keep improving!</p>
+    </header>
+
+    <section class="activity-tracker">
+      <div class="tracker-item">
+        <h2>Steps</h2>
+        <p id="step-count">0</p>
+        <input type="number" id="step-input" placeholder="Enter steps" />
+        <button onclick="trackSteps()">Track Steps</button>
+      </div>
+
+      <div class="tracker-item">
+        <h2>Workout Duration (minutes)</h2>
+        <p id="workout-time">0 min</p>
+        <input type="number" id="workout-input" placeholder="Enter workout time" />
+        <button onclick="trackWorkout()">Track Workout</button>
+      </div>
+    </section>
+
+    <section class="summary">
+      <h2>Activity Summary</h2>
+      <p>Total Steps: <span id="total-steps">0</span></p>
+      <p>Total Calories: <span id="total-calories">0</span></p>
+      <p>Total Workout Time: <span id="total-workout">0 min</span></p>
+    </section>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+<section id="footer">
+    <footer class="footer py-1 my-2">
+        <p class="text-center text-body-secondary">© Byte-Sized Developers</p>
+      </footer>
+</section>
+</html>
